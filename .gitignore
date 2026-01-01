@@ -33,3 +33,6 @@ go.work.sum
 
 # Local SQLite
 storage/storage.db
+
+# Environment Variable Configuration
+config
