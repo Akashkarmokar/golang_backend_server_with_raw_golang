@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/Akashkarmokar/golang_backend_server_with_raw_golang/cmd/internal/config"
+)
 
 func main() {
-	fmt.Println("Hello")
+	// Load Configuration
+
+	cfg := config.MustLoad()
+	fmt.Println("Config : ", cfg.Env)
 }
